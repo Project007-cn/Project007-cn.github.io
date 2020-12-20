@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:title" content="Project007 - Some people who loves blogging and programming.">
+<meta property="og:type" content="site">
+<meta property="og:url" content="https://007.acfk.xyz/">
+<meta property="og:description" content="Some people who loves blogging and programming.">
+<meta property="og:image" content="/Team_logo.png">
+ <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Project007 - Some people who loves blogging and programming.">
+<meta name="twitter:description" content="Some people who loves blogging and programming.">
+<meta name="twitter:url" content="https://007.acfk.xyz/">
+<meta name="twitter:image" content="/Team_logo.png">
+<title>Project007 &#8211; Some people who loves blogging and programming.</title>
+<!-- MDUI CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+  integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+  crossorigin="anonymous"
+/>
+
+<!-- MDUI JavaScript -->
+<script
+  src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+  integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+  crossorigin="anonymous"
+></script>
+	<!-- 主页渐变效果 Thx to Flyingsky -->
+	<link rel="stylesheet" href="css/gradient.css">
+	<!-- Fade in -->
+	<link rel="stylesheet" href="css/fadein.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css">
+</head>
+<body class="mdui-theme-layout-auto mdui-theme-accent-blue mdui-drawer-body-left" style="z-index: 5000;">
+	<div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide mdui-appbar-inset">
+		<div class="mdui-toolbar">
+   <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#mdui-drawer' ,swipe: true}">
+   	<i class="mdui-icon material-icons">menu</i>
+   	</button>
+   <span class="mdui-typo-title">Project007</span>
+   <div class="mdui-toolbar-spacer"></div>
+  <button class="mdui-btn mdui-btn-icon"> <div class="hidden" id="music"> <div class="mdui-icon material-icons">music_note</div><audio id="audio" preload="none"></audio></div>
+  </button>
+</div>
+</div>
+
+<nav id="mdui-drawer" class="mdui-drawer mdui-drawer-close">
+		<div class="mdui-grid-tile">
+			<img src="Team_logo.png" />
+			<div class="mdui-grid-tile-actions mdui-grid-tile-actions-gradient">
+				<div class="mdui-grid-tile-text">
+					<div class="mdui-grid-tile-title"> 是一群爱好博客和代码的人～ </div>
+				</div>
+			</div>
+		</div>
+		<ul class="mdui-list"> <a href="https://p007.pp.ua/">
+				<li class="mdui-list-item mdui-ripple"><i
+						class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">gesture</i>
+					<div class="mdui-list-item-content">主页</div>
+				</li>
+			</a>
+			<ul class="mdui-list" mdui-collapse="{accordion: true}">
+				<li class="mdui-collapse-item">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+						<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">public</i>
+						<div class="mdui-list-item-content">博客 | Blog</div>
+					</div>
+				</li>
+
+				<li class="mdui-collapse-item mdui-collapse-item-open">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> <svg t="1597484619950"
+							class="icon mdui-list-item-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+							p-id="20877" width="16" height="16">
+							<path
+								d="M213.333333 810.666667a42.666667 42.666667 0 0 0 42.666667 42.666666h512a42.666667 42.666667 0 0 0 42.666667-42.666666c0-8.96-2.986667-17.493333-7.68-24.32L554.666667 356.266667V170.666667h-85.333334v185.6L221.013333 786.346667c-4.693333 6.826667-7.68 15.36-7.68 24.32m42.666667 128a128 128 0 0 1-128-128c0-25.6 7.68-49.493333 21.333333-69.546667L384 333.226667V256a42.666667 42.666667 0 0 1-42.666667-42.666667V170.666667a85.333333 85.333333 0 0 1 85.333334-85.333334h170.666666a85.333333 85.333333 0 0 1 85.333334 85.333334v42.666666a42.666667 42.666667 0 0 1-42.666667 42.666667v77.226667l234.666667 407.893333c13.653333 20.053333 21.333333 43.946667 21.333333 69.546667a128 128 0 0 1-128 128H256z"
+								fill="#673AB7" p-id="20878"></path>
+						</svg>
+						<div class="mdui-list-item-content">实验室 | Lab</div>
+					</div>
+					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense"> <a href="javascript:comingsoon();">
+							<li class="mdui-list-item mdui-ripple">Typecho theme | GrassMaterial</li>
+						</a>
+					</ul>
+				</li>
+			</ul>
+
+	</nav>
+	
+	</div>
+  
+<div class="mdui-container" style="background-image: url('https://images.unsplash.com/photo-1608228070292-630a8d5bb239') ;">
+		<div class="p007-title mdui-valign">
+			<div class="p007-title-text mdui-hidden-xs">
+				<div class="mdui-typo-display-3">Project007</div> <br>
+				<div class="mdui-typo-subheading-opacity">Some people who loves blogging and programming.</div>
+			</div>
+			<div class="p007-title-text mdui-hidden-sm-up mdui-center"> <br>
+				<div class="mdui-typo-display-3">Project007</div> <br>
+				<div class="mdui-typo-subheading-opacity">Some people who loves blogging and programming.</div>
+			</div>
+		</div>
+		</div>
+		<div class="mdui-container">
+   <div class="mdui-row-xs-2">
+  <div class="mdui-col">
+<div class="mdui-card">
+  <div class="mdui-card-media">
+    <img src="card.jpg"/>
+    <div class="mdui-card-media-covered">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">成员</div>
+        <div class="mdui-card-primary-subtitle">咕…咕…咕</div>
+      </div>
+      <div class="mdui-card-actions">
+        <a href="./members/"  class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"> <i class="mdui-icon material-icons">arrow_forward</i> </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="mdui-col">
+  	<div class="mdui-card">
+   <div class="mdui-card-media">
+    <img src="card.jpg"/>
+    <div class="mdui-card-media-covered">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">事件</div>
+        <div class="mdui-card-primary-subtitle">联盟的点点滴滴</div>
+      </div>
+      <div class="mdui-card-actions">
+        <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"><i class="mdui-icon material-icons">arrow_forward</i></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="mdui-col">
+  	<div class="mdui-card">
+   <div class="mdui-card-media">
+    <img src="card.jpg"/>
+    <div class="mdui-card-media-covered">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">博客</div>
+        <div class="mdui-card-primary-subtitle">小伙伴们写作的地方</div>
+      </div>
+      <div class="mdui-card-actions">
+        <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"><i class="mdui-icon material-icons">arrow_forward</i></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="mdui-col">
+  		<div class="mdui-card">
+  <div class="mdui-card-media">
+    <img src="card.jpg"/>
+    <div class="mdui-card-media-covered">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">留言板</div>
+        <div class="mdui-card-primary-subtitle">尽情玩耍（</div>
+      </div>
+      <div class="mdui-card-actions">
+        <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"><i class="mdui-icon material-icons">arrow_forward</i></button>
+      </div>
+    </div>
+  </div>
+</div>
+  	</div>
+   <div class="mdui-col">
+   	<div class="mdui-card">
+   <div class="mdui-card-media">
+    <img src="card.jpg"/>
+    <div class="mdui-card-media-covered">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">关于我们</div>
+        <div class="mdui-card-primary-subtitle">目前已知的情报</div>
+      </div>
+      <div class="mdui-card-actions">
+        <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"><i class="mdui-icon material-icons">arrow_forward</i></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="mdui-col">
+  	<div class="mdui-card">
+   <div class="mdui-card-media">
+    <img src="card.jpg"/>
+    <div class="mdui-card-media-covered">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">加入我们</div>
+        <div class="mdui-card-primary-subtitle">和我们一起玩耍（？）</div>
+      </div>
+      <div class="mdui-card-actions">
+        <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"><i class="mdui-icon material-icons">arrow_forward</i></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<footer class="mdui-text-color-grey-400" style="padding-top: 25px" align="center">
+	<a href="https://github.com/project007-cn" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '查看 Github'}">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+	c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+	c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+	c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+	c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+	c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
+      </svg>
+    </a>
+    <br>
+    <p>萌ICP备</p>	
+    <p>© Project007 , 2020 </p> <p>网站引用的资源版权属于原作者。</p>
+ </footer>
+ <script>(function(){var a=document.getElementById("audio");var b=document.getElementById("music");var c=["http://music.163.com/song/media/outer/url?id=36990266.mp3"];var d=0.45;if(d>=0&&d<=1){a.volume=d}a.src=c.shift();a.addEventListener('play',g);a.addEventListener('pause',h);a.addEventListener('ended',f);a.addEventListener('error',f);a.addEventListener('canplay',j);function f(){if(!c.length){a.removeEventListener('play',g);a.removeEventListener('pause',h);a.removeEventListener('ended',f);a.removeEventListener('error',f);a.removeEventListener('canplay',j);b.style.display="none";mdui.snackbar({message: '本站的背景音乐好像有问题了，希望您可以通过留言等方式通知管理员，谢谢您的帮助。',position: 'left-bottom',timeout: 5000});}else{a.src=c.shift();a.play()}}function g(){b.setAttribute("class","play");a.addEventListener('timeupdate',k)}function h(){b.removeAttribute("class");a.removeEventListener('timeupdate',k)}function j(){c.push(a.src)}function k(){b.getElementsByTagName("i")[0].style.height=(a.currentTime/a.duration*100).toFixed(1)+"%"}b.onclick=function(){if(a.canPlayType('audio/mpeg')!=""||a.canPlayType('audio/ogg;codes="vorbis"')!=""||a.canPlayType('audio/mp4;codes="mp4a.40.5"')!=""){if(a.paused){if(a.error){f()}else{a.play()}}else{a.pause()}}else{mdui.snackbar({message: '对不起，您的浏览器不支持HTML5音频播放，请升级您的浏览器。',position: 'left-bottom',timeout: 5000});}};b.removeAttribute("class")})();</script>
+ <script src="./tip.js"> </script>

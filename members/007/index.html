@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:title" content="Project007 - Some people who loves blogging and programming.">
+<meta property="og:type" content="site">
+<meta property="og:url" content="https://007.acfk.xyz/">
+<meta property="og:description" content="Some people who loves blogging and programming.">
+<meta property="og:image" content="/Team_logo.png">
+ <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Project007 - Some people who loves blogging and programming.">
+<meta name="twitter:description" content="Some people who loves blogging and programming.">
+<meta name="twitter:url" content="https://007.acfk.xyz/">
+<meta name="twitter:image" content="/Team_logo.png">
+<title>Project007 &#8211; Some people who loves blogging and programming.</title>
+<!-- MDUI CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+  integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+  crossorigin="anonymous"
+/>
+
+<!-- MDUI JavaScript -->
+<script
+  src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+  integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+  crossorigin="anonymous"
+></script>
+	<!-- 主页渐变效果 Thx to Flyingsky -->
+	<link rel="stylesheet" href="css/gradient.css">
+	<!-- Fade in -->
+	<link rel="stylesheet" href="css/fadein.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css">
+</head>
+<body class="mdui-theme-layout-auto mdui-theme-accent-blue mdui-drawer-body-left" style="z-index: 5000;">
+	<div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide mdui-appbar-inset">
+		<div class="mdui-toolbar">
+   <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#mdui-drawer' ,swipe: true}">
+   	<i class="mdui-icon material-icons">menu</i>
+   	</button>
+   <span class="mdui-typo-title">Project007</span>
+   <div class="mdui-toolbar-spacer"></div>
+  <button class="mdui-btn mdui-btn-icon"> <div class="hidden" id="music"> <div class="mdui-icon material-icons">music_note</div><audio id="audio" preload="none"></audio></div>
+  </button>
+</div>
+</div>
+
+<nav id="mdui-drawer" class="mdui-drawer mdui-drawer-close">
+		<div class="mdui-grid-tile">
+			<img src="Team_logo.png" />
+			<div class="mdui-grid-tile-actions mdui-grid-tile-actions-gradient">
+				<div class="mdui-grid-tile-text">
+					<div class="mdui-grid-tile-title"> 是一群爱好博客和代码的人～ </div>
+				</div>
+			</div>
+		</div>
+		<ul class="mdui-list"> <a href="https://007.acfk.xyz/">
+				<li class="mdui-list-item mdui-ripple"><i
+						class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">gesture</i>
+					<div class="mdui-list-item-content">主页</div>
+				</li>
+			</a>
+			<ul class="mdui-list" mdui-collapse="{accordion: true}">
+				<li class="mdui-collapse-item">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+						<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">public</i>
+						<div class="mdui-list-item-content">博客 | Blog</div>
+					</div>
+				</li>
+
+				<li class="mdui-collapse-item mdui-collapse-item-open">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> <svg t="1597484619950"
+							class="icon mdui-list-item-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+							p-id="20877" width="16" height="16">
+							<path
+								d="M213.333333 810.666667a42.666667 42.666667 0 0 0 42.666667 42.666666h512a42.666667 42.666667 0 0 0 42.666667-42.666666c0-8.96-2.986667-17.493333-7.68-24.32L554.666667 356.266667V170.666667h-85.333334v185.6L221.013333 786.346667c-4.693333 6.826667-7.68 15.36-7.68 24.32m42.666667 128a128 128 0 0 1-128-128c0-25.6 7.68-49.493333 21.333333-69.546667L384 333.226667V256a42.666667 42.666667 0 0 1-42.666667-42.666667V170.666667a85.333333 85.333333 0 0 1 85.333334-85.333334h170.666666a85.333333 85.333333 0 0 1 85.333334 85.333334v42.666666a42.666667 42.666667 0 0 1-42.666667 42.666667v77.226667l234.666667 407.893333c13.653333 20.053333 21.333333 43.946667 21.333333 69.546667a128 128 0 0 1-128 128H256z"
+								fill="#673AB7" p-id="20878"></path>
+						</svg>
+						<div class="mdui-list-item-content">实验室 | Lab</div>
+					</div>
+					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense"> <a href="javascript:comingsoon();">
+							<li class="mdui-list-item mdui-ripple">Typecho theme | GrassMaterial</li>
+						</a>
+					</ul>
+				</li>
+			</ul>
+
+	</nav>
+	
+	</div>
+  
